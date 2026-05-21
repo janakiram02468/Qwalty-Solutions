@@ -1,0 +1,227 @@
+export type ProductSubcategory = {
+  name: string;
+  image: string;
+};
+
+export type ProductCategory = {
+  id: string;
+  name: string;
+  badge: string;
+  description: string;
+  image: string;
+  subcategories: ProductSubcategory[];
+};
+
+/** Product categories aligned with industrymro.com homepage grids. */
+export const PRODUCT_CATEGORIES: ProductCategory[] = [
+  {
+    id: "electricals",
+    name: "Electricals",
+    badge: "Electricals",
+    description: "Cables, wiring, switchgear and electrical components for industrial and commercial use.",
+    image: "https://industrymro.com/wp-content/uploads/2026/04/cable3.jpg",
+    subcategories: [
+      { name: "Cables & Wires", image: "https://industrymro.com/wp-content/uploads/2026/04/cable3.jpg" },
+      { name: "Switchgear", image: "https://industrymro.com/wp-content/uploads/2026/04/switchgear.jpg" },
+      { name: "Circuit Breakers", image: "https://industrymro.com/wp-content/uploads/2026/04/circuit-breakers.avif" },
+      { name: "Distribution Boards", image: "https://industrymro.com/wp-content/uploads/2026/04/mcb-distribution-board-500x500-1.webp" },
+      { name: "Alarms & Detectors", image: "https://industrymro.com/wp-content/uploads/2026/04/alarms-and-detectors-1.png" },
+      { name: "Fans & Air-Coolers", image: "https://industrymro.com/wp-content/uploads/2026/04/fans-and-air-coolers.jpg" },
+      { name: "Inverters & Stabilizers", image: "https://industrymro.com/wp-content/uploads/2026/04/inverter-and-stabilizer.png" },
+      { name: "Electrical Connectors", image: "https://industrymro.com/wp-content/uploads/2026/04/electrical-and-electrical-connectors.webp" },
+    ],
+  },
+  {
+    id: "tools",
+    name: "Industrial Tools",
+    badge: "Industrial Tools",
+    description: "Heavy-duty power and hand tools built for demanding workshop and factory environments.",
+    image: "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=800&auto=format&fit=crop",
+    subcategories: [
+      { name: "Power Drills", image: "https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=300&h=200&fit=crop" },
+      { name: "Angle Grinders", image: "https://industrymro.com/wp-content/uploads/2026/04/angle-grinder.webp" },
+      { name: "Hand Tools Set", image: "https://industrymro.com/wp-content/uploads/2026/04/hand-tools-set.jpg" },
+      { name: "Wrenches & Spanners", image: "https://industrymro.com/wp-content/uploads/2026/04/wrenches-and-spanners.jpg" },
+      { name: "Welding Equipment", image: "https://industrymro.com/wp-content/uploads/2026/04/welding-equipments.webp" },
+      { name: "Cutting Tools", image: "https://industrymro.com/wp-content/uploads/2026/04/cutting-tools.webp" },
+      { name: "Measuring Tools", image: "https://industrymro.com/wp-content/uploads/2026/04/measuring-tools.png" },
+      { name: "Pneumatic Tools", image: "https://industrymro.com/wp-content/uploads/2026/04/pneumatic-tools-500x500-1.webp" },
+    ],
+  },
+  {
+    id: "safety",
+    name: "Safety (PPE)",
+    badge: "Safety (PPE)",
+    description: "Helmets, gloves, eyewear and full protective gear to keep your workforce safe on-site.",
+    image: "https://industrymro.com/wp-content/uploads/2026/04/safety.jpeg",
+    subcategories: [
+      { name: "Safety Helmets", image: "https://industrymro.com/wp-content/uploads/2026/04/safety-helmets.jpg" },
+      { name: "Safety Gloves", image: "https://industrymro.com/wp-content/uploads/2026/04/safety-gloves.webp" },
+      { name: "Safety Glasses", image: "https://industrymro.com/wp-content/uploads/2026/04/safety-glasses.jpg" },
+      { name: "High-Vis Vests", image: "https://industrymro.com/wp-content/uploads/2026/04/high-vis-vests.jpg" },
+      { name: "Safety Boots", image: "https://industrymro.com/wp-content/uploads/2026/04/safety-shoes.jpg" },
+      { name: "Ear Protection", image: "https://industrymro.com/wp-content/uploads/2026/04/ear-safety.jpg" },
+      { name: "Face Shields", image: "https://industrymro.com/wp-content/uploads/2026/04/safety-sheilds.jpg" },
+      { name: "Respiratory Masks", image: "https://industrymro.com/wp-content/uploads/2026/04/respiratory-masks.avif" },
+    ],
+  },
+  {
+    id: "office",
+    name: "Stationery & Office Supplies",
+    badge: "Office Supplies",
+    description: "Notebooks, pens, filing systems, desk organizers and all office essentials for smooth operations.",
+    image: "https://industrymro.com/wp-content/uploads/2026/04/Office-supplies-industryMro-MRO-Products.png",
+    subcategories: [
+      { name: "Notebooks & Pads", image: "https://industrymro.com/wp-content/uploads/2026/04/notebooks-and-pads.jpg" },
+      { name: "Pens & Markers", image: "https://industrymro.com/wp-content/uploads/2026/04/markers-and-pens.jpg" },
+      { name: "Filing Systems", image: "https://industrymro.com/wp-content/uploads/2026/04/filing-sytems.jpg" },
+      { name: "Desk Organizers", image: "https://industrymro.com/wp-content/uploads/2026/04/desk-organizers.jpg" },
+      { name: "Printer Paper", image: "https://industrymro.com/wp-content/uploads/2026/04/printer-paper.jpg" },
+      { name: "Staplers & Clips", image: "https://industrymro.com/wp-content/uploads/2026/04/staplers-and-clips.jpg" },
+      { name: "Whiteboard & Markers", image: "https://industrymro.com/wp-content/uploads/2026/04/whiteboards-and-markers.jpg" },
+      { name: "Punching Machines", image: "https://industrymro.com/wp-content/uploads/2026/04/punching-machines.webp" },
+    ],
+  },
+  {
+    id: "lubricants",
+    name: "Industrial Lubricants",
+    badge: "Lubricants",
+    description: "Greases, oils, cutting fluids, and anti-seize compounds to reduce friction and extend equipment life.",
+    image: "https://industrymro.com/wp-content/uploads/2026/04/FOT1-oleje-smarowe.webp",
+    subcategories: [
+      { name: "Engine Oils", image: "https://industrymro.com/wp-content/uploads/2026/04/engine-oil.png" },
+      { name: "Industrial Greases", image: "https://industrymro.com/wp-content/uploads/2026/04/industrial-greases.png" },
+      { name: "Industrial Cutting Fluids", image: "https://industrymro.com/wp-content/uploads/2026/04/cutting-oil.jpg" },
+      { name: "Anti-Seize Compounds", image: "https://industrymro.com/wp-content/uploads/2026/04/chain-and-wire-rope.webp" },
+      { name: "Chain & Wire Rope Oil", image: "https://industrymro.com/wp-content/uploads/2026/04/chain-and-wire-rope.webp" },
+      { name: "Hydraulic Fluids", image: "https://industrymro.com/wp-content/uploads/2026/04/hydrolic-fluids.avif" },
+      { name: "Gear Oils", image: "https://industrymro.com/wp-content/uploads/2026/04/gear-oils.jpg" },
+      { name: "Spray Lubricants", image: "https://industrymro.com/wp-content/uploads/2026/04/spray-lubricants.webp" },
+    ],
+  },
+  {
+    id: "automotive",
+    name: "Automotive Equipments",
+    badge: "Automotive",
+    description: "High-performance filters, belts, brake components, ignition parts, and engine systems for reliable fleet & vehicle maintenance.",
+    image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=800&auto=format&fit=crop",
+    subcategories: [
+      { name: "Air & Oil Filters", image: "https://industrymro.com/wp-content/uploads/2026/04/air-and-oil-filters.avif" },
+      { name: "Brake Components", image: "https://industrymro.com/wp-content/uploads/2026/04/break-components.webp" },
+      { name: "Belts & Hoses", image: "https://industrymro.com/wp-content/uploads/2026/04/belts-and-hoses.webp" },
+      { name: "Ignition Parts", image: "https://industrymro.com/wp-content/uploads/2026/04/ignition-parts.avif" },
+      { name: "Battery & Electrical", image: "https://industrymro.com/wp-content/uploads/2026/04/battery-and-electrical.jpg" },
+      { name: "Suspension Components", image: "https://industrymro.com/wp-content/uploads/2026/04/suspension-parts.jpg" },
+      { name: "Engine Components", image: "https://industrymro.com/wp-content/uploads/2026/04/engine-component.jpg" },
+      { name: "Tyres & Wheels", image: "https://industrymro.com/wp-content/uploads/2026/04/tyres-and-wheels.jpg" },
+    ],
+  },
+  {
+    id: "packaging-adhesives",
+    name: "Packaging & Adhesives",
+    badge: "Packaging & Adhesives",
+    description: "Industrial tapes, glues, sealants, shrink wrap, and carton sealing solutions for safe shipping and assembly.",
+    image: "https://industrymro.com/wp-content/uploads/2026/04/packaging-and-adhesives.png",
+    subcategories: [
+      { name: "Packaging Tapes", image: "https://industrymro.com/wp-content/uploads/2026/04/packaging-tapes.webp" },
+      { name: "Industrial Glues", image: "https://industrymro.com/wp-content/uploads/2026/04/industrial-glues.png" },
+      { name: "Sealants", image: "https://industrymro.com/wp-content/uploads/2026/04/sealants.jpg" },
+      { name: "Shrink Wrap", image: "https://industrymro.com/wp-content/uploads/2026/04/shrink-wraps.webp" },
+      { name: "Carton Sealing", image: "https://industrymro.com/wp-content/uploads/2026/04/carton-sealings.jpg" },
+      { name: "Foam & Bubble Wrap", image: "https://industrymro.com/wp-content/uploads/2026/04/foam-and-bubble-rap.png" },
+      { name: "Strapping & Banding", image: "https://industrymro.com/wp-content/uploads/2026/04/banding-and-strapping.png" },
+      { name: "Label & Marking", image: "https://industrymro.com/wp-content/uploads/2026/04/label-and-marking.jpg" },
+    ],
+  },
+  {
+    id: "pipes-fittings",
+    name: "Pipes & Fittings",
+    badge: "Pipes & Fittings",
+    description: "Steel, PVC, and galvanized pipes along with elbows, flanges, and connectors for plumbing and industrial lines.",
+    image: "https://industrymro.com/wp-content/uploads/2026/04/pipes-and-fittings.jpg",
+    subcategories: [
+      { name: "Steel Pipes", image: "https://industrymro.com/wp-content/uploads/2026/04/steel-pipes.jpg" },
+      { name: "PVC Pipes", image: "https://industrymro.com/wp-content/uploads/2026/04/pvc-pipes.jpg" },
+      { name: "Galvanized Pipes", image: "https://industrymro.com/wp-content/uploads/2026/04/galvanized-pipes.webp" },
+      { name: "Elbows & Bends", image: "https://industrymro.com/wp-content/uploads/2026/04/bends-and-elbows.png" },
+      { name: "Flanges", image: "https://industrymro.com/wp-content/uploads/2026/04/elbows-and-bends-1.png" },
+      { name: "Couplings & Unions", image: "https://industrymro.com/wp-content/uploads/2026/04/coupling-and-union.webp" },
+      { name: "Valves", image: "https://industrymro.com/wp-content/uploads/2026/04/valves.jpg" },
+      { name: "Hoses & Clamps", image: "https://industrymro.com/wp-content/uploads/2026/04/hoses-and-clamps.webp" },
+    ],
+  },
+  {
+    id: "electronic-devices",
+    name: "Electronic Devices",
+    badge: "Electronic Devices",
+    description: "Multimeters, oscilloscopes, power supplies, soldering stations, and testing equipment for precision work.",
+    image: "https://industrymro.com/wp-content/uploads/2026/04/electronic-devices.webp",
+    subcategories: [
+      { name: "Multimeters", image: "https://industrymro.com/wp-content/uploads/2026/04/multimeter.webp" },
+      { name: "Oscilloscopes", image: "https://industrymro.com/wp-content/uploads/2026/04/oscilloscopes.webp" },
+      { name: "Power Supplies", image: "https://industrymro.com/wp-content/uploads/2026/04/power-supply.jpg" },
+      { name: "Soldering Stations", image: "https://industrymro.com/wp-content/uploads/2026/04/soldering-station.jpg" },
+      { name: "Signal Generators", image: "https://industrymro.com/wp-content/uploads/2026/04/signal-generators.jpg" },
+      { name: "PCB & Components", image: "https://industrymro.com/wp-content/uploads/2026/04/pcb-and-components.jpg" },
+      { name: "Testing Equipment", image: "https://industrymro.com/wp-content/uploads/2026/04/testing-equipments.jpg" },
+      { name: "Data Loggers", image: "https://industrymro.com/wp-content/uploads/2026/04/data-logger.jpg" },
+    ],
+  },
+  {
+    id: "medical-lab",
+    name: "Medical Lab & Supplies",
+    badge: "Medical Lab & Supplies",
+    description: "Lab glassware, diagnostic tools, protective wear, and consumables for clinical and research settings.",
+    image: "https://industrymro.com/wp-content/uploads/2026/04/images-1.jpg",
+    subcategories: [
+      { name: "Lab Glassware", image: "https://industrymro.com/wp-content/uploads/2026/04/glasswares.webp" },
+      { name: "Diagnostic Tools", image: "https://industrymro.com/wp-content/uploads/2026/04/diagnostic-tools.jpg" },
+      { name: "Protective Wear", image: "https://industrymro.com/wp-content/uploads/2026/04/protective-wear.jpg" },
+      { name: "Microscopes", image: "https://industrymro.com/wp-content/uploads/2026/04/microscopes.webp" },
+      { name: "Consumables", image: "https://industrymro.com/wp-content/uploads/2026/04/consumables.jpg" },
+      { name: "Centrifuges", image: "https://industrymro.com/wp-content/uploads/2026/04/centrifuges.webp" },
+      { name: "Sterilisation", image: "https://industrymro.com/wp-content/uploads/2026/04/sterlization.jpg" },
+      { name: "Sample Collection", image: "https://industrymro.com/wp-content/uploads/2026/04/sample-collection.webp" },
+    ],
+  },
+  {
+    id: "custom-tools",
+    name: "Custom Tools",
+    badge: "Custom Tools",
+    description: "Jigs, fixtures, industrial fabrication, and moulds – tailor-made for your unique production needs.",
+    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=800&auto=format&fit=crop",
+    subcategories: [
+      { name: "Jigs & Fixtures", image: "https://industrymro.com/wp-content/uploads/2026/04/jigs-and-fixtures.webp" },
+      { name: "Custom Moulds", image: "https://industrymro.com/wp-content/uploads/2026/04/mould.webp" },
+      { name: "Fabrication Tools", image: "https://industrymro.com/wp-content/uploads/2026/04/custom-fabrication-tools.webp" },
+      { name: "CNC Tooling", image: "https://industrymro.com/wp-content/uploads/2026/04/cnc-tooling.webp" },
+      { name: "Cutting Dies", image: "https://industrymro.com/wp-content/uploads/2026/04/cutting-dies.webp" },
+      { name: "Gauges & Templates", image: "https://industrymro.com/wp-content/uploads/2026/04/gauges-and-templates.jpeg" },
+      { name: "Specialty Clamps", image: "https://industrymro.com/wp-content/uploads/2026/04/speciality-clamps.webp" },
+      { name: "Drill Jigs", image: "https://industrymro.com/wp-content/uploads/2026/04/drill-jig-fixture-250x250-1.png" },
+    ],
+  },
+  {
+    id: "marine",
+    name: "Marine",
+    badge: "Marine",
+    description: "Boat engines, propellers, navigation gear, deck hardware, and corrosion-resistant marine components.",
+    image: "https://industrymro.com/wp-content/uploads/2026/04/marine.jpg",
+    subcategories: [
+      { name: "Boat Engines", image: "https://industrymro.com/wp-content/uploads/2026/04/boat-engine.avif" },
+      { name: "Propellers", image: "https://industrymro.com/wp-content/uploads/2026/04/propellars.jpg" },
+      { name: "Navigation Gear", image: "https://industrymro.com/wp-content/uploads/2026/04/navigation-gear.jpg" },
+      { name: "Deck Hardware", image: "https://industrymro.com/wp-content/uploads/2026/04/deck-hardware.jpg" },
+      { name: "Marine Electrical", image: "https://industrymro.com/wp-content/uploads/2026/04/marine-electricals.jpg" },
+      { name: "Anchors & Chains", image: "https://industrymro.com/wp-content/uploads/2026/04/anchor-and-chains.jpg" },
+      { name: "Safety & Rescue", image: "https://industrymro.com/wp-content/uploads/2026/04/safety.webp" },
+      { name: "Anti-Corrosion", image: "https://industrymro.com/wp-content/uploads/2026/04/anti-corrison.jpg" },
+    ],
+  },
+];
+
+export const PRODUCT_CATEGORY_ROWS: ProductCategory[][] = [
+  PRODUCT_CATEGORIES.slice(0, 4),
+  PRODUCT_CATEGORIES.slice(4, 8),
+  PRODUCT_CATEGORIES.slice(8, 12),
+];
